@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/img/background.webp');
+    animation: animated 15s infinite;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    text-shadow: 0 0 4px black;
+  }
+
+  @keyframes animated {
+    0%{
+      background-color: #2E0249;
+    }
+    20%{
+      background-color: #570A57;
+    }
+    40%{
+      background-color: #A91079;
+    }
+    60%{
+      background-color: #F806CC;
+    }
+    80%{
+      background-color: #570A57;
+    }
+    100%{
+      background-color: #2E0249;
+    }
+  }
+  
+  .player,
+  .computer {
+    text-align: center;
+    text-shadow: 0 0 4px white;
+  }
+
+  .choice {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin-top: 200px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .playerImgs,
+  .computerImgs {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    max-height: 90px;
+  }
+  img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .pImg:hover {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+  }
+
+  .active {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .winner {
+    width: 100%;
+  }
+
+  .reset {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(0, 255, 149, 0.514);
+    color: black;
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+
+  .reset:hover {
+    cursor: pointer;
+  }
+  
+  .winnerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

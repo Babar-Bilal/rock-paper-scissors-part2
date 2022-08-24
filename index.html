@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ROCK PAPER OR SCISSORS</title>
+</head>
+<body>
+    <audio id="cheersound" src="./sounds/happy.wav"></audio>
+    <audio id="sadsound" src="./sounds/sad.mp3"></audio>
+    <div class="score">
+        <h2 class="ties">Ties: 0</h2>
+    </div> 
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="reset" onclick="gameReset()">Play Again?</button>
+    </div>
+    <div class="playerSection">
+        <h1 class="player">PLAYER</h1>
+        <h2 class="playerChoice"></h2>
+        <h2 class="playerScore">Score: 0</h2> 
+        <div class="playerimgs">
+            <img src="./img/rock.png" alt="ROCK" class="pImg" id="rock">
+            <img src="./img/paper.png" alt="PAPER" class="pImg" id="paper">
+            <img src="./img/scissors.png" alt="Scissors" class="pImg" id="scissors">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="computerSection">
+        <h1 class="computer">COMPUTER</h1>
+        <h2 class="computerChoice"></h2>
+        <h2 class="computerScore">Score: 0</h2>   
+        <div class="computerimgs">
+            <img src="./img/rock.png" alt="ROCK" class="rock">
+            <img src="./img/paper.png" alt="PAPER" class="paper">
+            <img src="./img/scissors.png" alt="Scissors" class="scissors">
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
